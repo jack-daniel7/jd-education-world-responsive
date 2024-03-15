@@ -190,3 +190,6 @@ form div{
  font-size: smaller;   
 }
  
+#submit:hover{
+    cursor: pointer;
+}
