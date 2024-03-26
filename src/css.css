@@ -1,42 +1,42 @@
-body{
-    background-color:#f0fdfa ;
+/*Base styles*/
+
+body {
+    background-color: #f0fdfa;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
-
-
-#navbar{
+#navbar {
     height: 40px;
     width: 40px;
     margin-bottom: 2px;
- 
+
 }
-.whole-navbar{
+
+.whole-navbar {
     padding: 0px;
     height: 40px;
-    
-}
-
-#bannerjipic {
-    height: 400px;
-    width: 100%;
-    padding: 0;
-   
-    
 
 }
 
-#bannerjipic {
-    object-fit: cover;
-}
-
-body {
-    padding: 16px 16px 0 16px;
-    margin: 0;
-    font-family: sans-serif;
-}
-
-.aboutus {
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 20px;
     text-align: center;
+    position: relative;
+    left: 50px;
+}
+
+#bannerjipic {
+    height: 250px;
+    width: 100%;
+    /* min-width: 576px; */
+    padding: 0;
+    object-fit: cover;
 
 }
 
@@ -44,40 +44,203 @@ body {
     padding: 8px;
     padding: 16px;
 }
-
 #coursepic {
-    margin-top: 90px;
-    padding: 25px 25px 35px 25px;
-    border-radius: 35px;
-    float: right;
-
-
-
-}
-
-
-
-.kidding {
-    margin-top: 150px; 
-    color: gray;
-    padding: 8px;
+    height: 200px;
+    border-radius: 15px;
     position: relative;
-    left: 350px;
+    left: 100px;
+    margin: 10px;
+    
 }
-
-.escape {
-    color: black;
-    text-align: center;
-    padding: 8px;
-}
-
 .selectcourse {
-    padding: 0 0 50px 100px;
-    margin-top: 200px;
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    left: 50px;
+}
+
+#wholetable {
+    display: none;
+}
+
+.table-out{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin:8px;
+    position: relative;
+    left: 50px;
+    border-radius: 10px;
+
+}
+
+.table-in{
+    padding: 4px;
+    
+}
+
+#webd{
+ border: 0.2px solid black;
+ border-radius: 10px;
+ background-color: antiquewhite;
+ text-transform: uppercase;
+ 
+}
+
+#appd{
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+
+}
+
+#drops{
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+}
+
+#digit{
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+}
+
+
+/*Tablet*/
+@media screen and (min-width:576px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 30px;
+    }
+
+    #bannerjipic {
+        /* min-width: 768px; */
+        height: 400px;
+        width: 100%;
+        padding: 0;
+        object-fit: cover;
+       
+
+    }
+    #coursepic {
+        height: 300px;
+        border-radius: 25px;
+        float: right;
+        
+    }
+    .selectcourse {
+        font-size: 1.8rem;
+        position: relative;
+        top: 90px;
+    }
+
+    .table-out{
+        display: none;
+    }
+    #wholetable {
+        display: block;
+        width: 100%;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 16px;
+        margin-top: 200px;
+        min-width: 850px;
+        
+    
+    
+    }
+    
+    .tabletitles th {
+        text-align: center;
+        border: 1px solid black;
+        border-bottom: ;
+        padding: 12px;
+        background-color:gainsboro
+    
+    
+    }
+    
+    .courserows td {
+        
+        padding: 12px;
+    
+    }
+    #wholetable tr:nth-child(odd){
+        background-color: #99f6e4;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width:768px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 50px;
+    }
+
+    #bannerjipic{
+
+       width: 100%;
+       object-fit:cover ;
+       height: 550px;
+
+    }
+
+    #wholetable {
+        display: block;
+        width: 100%;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 16px;
+        min-width: 1200px;
+    }
 
 
 }
+
+/*larger desktops*/
+@media screen and (min-width:992px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #links {
     text-align: center;
@@ -117,37 +280,9 @@ div1 {
     padding: 20px;
 }
 
-#wholetable {
-    width: 100%;
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 16px;
-    
 
-
-}
-
-.tabletitles th {
-    text-align: center;
-    border: 1px solid black;
-    border-bottom: ;
-    padding: 12px;
-    background-color:gainsboro
-
-
-}
-
-.courserows td {
-    
-    padding: 12px;
-
-}
-#wholetable tr:nth-child(odd){
-    background-color: #99f6e4;
-}
  body{
-    font-family: 'montserrat',sans-serif;
+    
     
  }
 
@@ -196,3 +331,5 @@ form div{
 #submit:hover{
     cursor: pointer;
 }
+
+*/
