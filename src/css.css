@@ -1,83 +1,380 @@
-body{
-    background-color:#f0fdfa ;
+/*Base styles*/
+
+body {
+    background-color: #f0fdfa;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
-
-
-#navbar{
+#navbar {
     height: 40px;
     width: 40px;
     margin-bottom: 2px;
- 
+
 }
-.whole-navbar{
+
+.whole-navbar {
     padding: 0px;
     height: 40px;
-    
-}
-
-#bannerjipic {
-    height: 400px;
-    width: 100%;
-    padding: 0;
-   
-    
 
 }
 
-#bannerjipic {
-    object-fit: cover;
-}
-
-body {
-    padding: 16px 16px 0 16px;
-    margin: 0;
-    font-family: sans-serif;
-}
-
-.aboutus {
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 30px;
     text-align: center;
-
+    position: relative;
+    left: 200px;
 }
 
+#bannerpic {
+    height: 400px;
+    min-width: 768px;
+    /* width: 100%; */
+    padding: 0;
+
+
+}
+.aboutus{
+    text-transform: uppercase;
+}
 #about {
-    padding: 8px;
-    padding: 16px;
+
+    font-weight: 400;
+    font-size: 0.3;
+    position: relative;
+    left: 200px;
 }
 
 #coursepic {
-    margin-top: 90px;
-    padding: 25px 25px 35px 25px;
-    border-radius: 35px;
-    float: right;
-
-
-
-}
-
-
-
-.kidding {
-    margin-top: 150px; 
-    color: gray;
-    padding: 8px;
+    height: 200px;
+    border-radius: 15px;
     position: relative;
-    left: 350px;
-}
+    left: 100px;
+    margin: 10px;
+    position: relative;
+    left: 200px;
 
-.escape {
-    color: black;
-    text-align: center;
-    padding: 8px;
 }
 
 .selectcourse {
-    padding: 0 0 50px 100px;
-    margin-top: 200px;
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    left: 200px;
+}
+
+#wholetable {
+    display: none;
+}
+
+.table-out {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 8px;
+    position: relative;
+    left: 50px;
+    border-radius: 10px;
+    position: relative;
+    left: 200px;
+
+}
+
+.table-in {
+    padding: 4px;
+
+}
+
+#webd {
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+#appd {
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+#drops {
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#digit {
+    border: 0.2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+form {
+    position: relative;
+    left: 200px;
+}
+
+form input {
+    padding: 8px;
+}
+
+form div {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    padding: 6px;
+
+}
+
+
+#links{
+    text-decoration: none;
+}
+#list{
+    list-style-type: none;
+    margin: 2px;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: gray;
+    position: relative;
+    left: 10px;
+    margin-top: 6px;
+    
+}
+
+#wholefooter {
+    text-align: center;
+    min-width: 768px;
+    background-color: #e0f2fe;
+    padding: 10px;
+
+}
+
+
+
+
+/*Tablet*/
+@media screen and (min-width:576px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 35px;
+    }
+
+    #bannerpic {
+        min-width: 992px;
+        height: 500px;
+        width: 100%;
+        padding: 0;
+        object-fit: cover;
+
+
+    }
+
+    #coursepic {
+        height: 300px;
+        border-radius: 25px;
+        float: right;
+
+    }
+
+    .selectcourse {
+        font-size: 1.9rem;
+        position: relative;
+        top: 90px;
+
+    }
+
+    .table-out {
+        display: none;
+    }
+
+    #wholetable {
+        display: block;
+        width: 100%;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 16px;
+        margin-top: 200px;
+        min-width: 850px;
+        position: relative;
+        left: 100px;
+
+
+
+
+    }
+
+    .tabletitles th {
+        text-align: center;
+        border: 1px solid black;
+        border-bottom: ;
+        padding: 12px;
+        background-color: gainsboro
+    }
+
+    .courserows td {
+
+        padding: 12px;
+
+    }
+
+    #wholetable tr:nth-child(odd) {
+        background-color: #99f6e4;
+    }
+
+
+    form input {
+        padding: 8px;
+    }
+
+    form div {
+        margin-top: 2px;
+        margin-bottom: 4px;
+        padding: 6px;
+
+    }
+#wholefooter{
+    min-width: 992px;
+    text-decoration: none;
+    
+}
+
+#list li {
+
+
+    display: inline;
+   padding: 6px;
+   text-decoration: none;
+   
+    /* margin-left: 90px; */
+
+}
+#links{
+    text-decoration: none;
+   
+}
+
+}
+
+/*desktop*/
+@media screen and (min-width:768px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 50px;
+        text-align: center;
+        position: unset;
+    }
+
+    .selectcourse {
+        position: relative;
+        right: 900px;
+    }
+
+    #coursepic {
+        margin-top: 90px;
+        padding: 25px 25px 35px 25px;
+        border-radius: 35px;
+        float: right;
+    }
+
+    #bannerpic {
+
+        height: 400px;
+        width: 100%;
+        padding: 0;
+
+    }
+
+    #wholetable {
+        display: block;
+        max-width: 890px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 16px;
+        position: relative;
+        top: 240px;
+        left: 200px;
+    }
+
+    .tabletitles th {
+        text-align: center;
+        border: 1px solid black;
+        border-bottom: ;
+        padding: 12px;
+        background-color: gainsboro;
+
+    }
+
+    .courserows td {
+
+        padding: 12px;
+
+    }
+
 
 
 }
+
+/*larger desktops*/
+@media screen and (min-width:992px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 40px;
+    }
+
+
+
+}
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #links {
     text-align: center;
@@ -117,37 +414,9 @@ div1 {
     padding: 20px;
 }
 
-#wholetable {
-    width: 100%;
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 16px;
-    
 
-
-}
-
-.tabletitles th {
-    text-align: center;
-    border: 1px solid black;
-    border-bottom: ;
-    padding: 12px;
-    background-color:gainsboro
-
-
-}
-
-.courserows td {
-    
-    padding: 12px;
-
-}
-#wholetable tr:nth-child(odd){
-    background-color: #99f6e4;
-}
  body{
-    font-family: 'montserrat',sans-serif;
+    
     
  }
 
@@ -167,11 +436,7 @@ div1 {
 
   
 
- form input{
-    padding: 8px;
-    
- }
-
+ 
  a:hover {
     color: darkturquoise;
  }
@@ -179,16 +444,7 @@ div1 {
     color: #134e4a;
   }
   
-form div{
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding: 16px;
 
-
-  
-  
-  
-  }
 .prosndcons{
  font-size: smaller;   
 }
@@ -196,3 +452,5 @@ form div{
 #submit:hover{
     cursor: pointer;
 }
+
+*/
